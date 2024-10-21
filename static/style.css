@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-image: url('http://127.0.0.1:5000/static/img/bg.jpg');
+    background-size: cover;  /* Ajusta la imagen para que cubra todo el fondo */
+    background-position: center;  /* Centra la imagen */
+    background-repeat: no-repeat;  /* Evita que la imagen se repita */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;  /* Elimina los márgenes por defecto */
+}
+
+
+.form-content {
+    background: linear-gradient(50deg,
+    rgba(40, 42, 55, 1) 10%,
+    rgba(40, 42, 55, 0.7)
+    ),
+    url('http://127.0.0.1:5000/static/img/ml.jpg');  /* Ajusta la ruta de la imagen si es necesario */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    width: 1000px;
+    border-radius: 25px;
+}
+
+.form-content h1{
+    color: aliceblue;
+    font-size: 40px;
+    margin-bottom: 25px;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+label{
+    font-size: 17px;
+    color: #959AAB;
+    margin-bottom: 10px;
+
+}
+
+input , textarea {
+    padding: 17px 14px;
+    background-color: #333646 !important;
+    border: 0 !important;
+    font-size: 15px;
+    color: #f4f6f9 !important;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.form-control {
+    padding: 17px 14px;
+    background-color: #333646 !important;
+    border: 0 !important;
+    font-size: 15px;
+    color: #f4f6f9 !important;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.form-control:focus {
+    background-color: #333 !important; /* Color de fondo al hacer foco */
+    border-color: #007bff !important; /* Color del borde al hacer foco */
+}
+
+
+
+
+:focus {
+    outline: 1px solid #1e92e9;
+}
+
+.btn {
+    background-color: #1e92e9;
+    width: 150px;
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+@media(max-width:991px){
+    body{
+        padding: 30px;
+    }
+    .form-content{
+        width: 100%;
+    }
+    form{
+        width: 100%;
+
+    }
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+.danger {
+    color: red;
+    font-weight: bold;
+}

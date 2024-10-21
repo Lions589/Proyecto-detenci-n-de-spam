@@ -1,0 +1,7 @@
+
+pip install flask 
+smtplib 
+pyodbc 
+joblib 
+scikit-learn 
+pandas
